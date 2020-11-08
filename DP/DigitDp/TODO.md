@@ -1,1 +1,1 @@
-https://www.codechef.com/problems/DGTCNT
+[Chef and Digits](https://www.codechef.com/problems/DGTCNT)
