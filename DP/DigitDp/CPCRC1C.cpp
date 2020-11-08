@@ -158,3 +158,78 @@ int main()
   }
 
 }
+
+
+
+//const int N = 1006;
+// int digits[N];
+// ll dp[11][100][2];
+
+
+
+
+// ll go(int pos, int n, ll sm, bool flag) {
+
+// 	if (pos > n) return sm;
+// //	dbg(digits[pos]);
+// 	ll &ret = dp[pos][sm][flag];
+// 	if (~ret) return ret;
+// 	int limit = (flag) ? digits[pos] : 9;
+// 	ll res = 0;
+// 	for (int i = 0; i <= limit; i++) {
+// 		res += go(pos + 1, n, sm + i, flag && (i == limit));
+// 	}
+// 	return ret = res;
+// }
+
+// int DigitSum(string s) {
+// 	int ret = 0;
+// 	for (auto &ch : s)
+// 		ret += (ch - '0');
+// 	return ret;
+// }
+
+// int main()
+// {
+// 	FASTIO
+// 	///*
+// #ifndef ONLINE_JUDGE
+// 	freopen("in.txt", "r", stdin);
+// 	freopen("out.txt", "w", stdout);
+// 	freopen("error.txt", "w", stderr);
+// #endif
+// //*/
+// 	int T;
+// 	T = 100000;
+// 	//scanf("%d", &T);
+// 	string a, b;
+// 	for (int cs = 1; cs <= T; cs++) {
+// 		cin >> a >> b;
+// 		//dbg(a,b);
+// 		if (a == "-1")break;
+// 		for (int i = 0; i < (int)a.size(); i++)
+// 			digits[i + 1] = a[i] - '0';
+// 		// for (int i = 1; i <= (int)a.size(); i++)
+// 		// 	dbg(digits[i]);
+// 		memset(dp, -1, sizeof dp);
+// 		ll l = go(1, a.size(), 0, 1);
+// 		// dbg(l);
+// 		for (int i = 0; i < (int)b.size(); i++)
+// 			digits[i + 1] = b[i] - '0';
+
+
+// 		// for (int i = 1; i <= (int)b.size(); i++)
+// 		// 	dbg(digits[i]);
+
+
+// 		memset(dp, -1, sizeof dp);
+// 		ll r = go(1, b.size(), 0, 1);
+// 		// dbg(r);
+// 		//dbg(DigitSum(a));
+// 		ll ans = r - l + DigitSum(a);
+// 		cout << ans << "\n";
+// 	}
+// 	return 0;
+// }
+
+
